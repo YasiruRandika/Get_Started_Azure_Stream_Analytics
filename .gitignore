@@ -1,0 +1,30 @@
+# Ignore Terraform state files and backup files
+*.tfstate
+*.tfstate.*
+*.backup
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore variables files (if they contain sensitive information)
+terraform.tfvars
+*.tfvars
+
+# Ignore crash log files
+crash.log
+crash.*
+
+# Ignore plan output files
+*.plan
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
