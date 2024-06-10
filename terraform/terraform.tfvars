@@ -1,6 +1,6 @@
-storage_account_name = "yourstorageaccountname"
-unique_suffix        = "unique-suffix"
-event_ns_name        = "youreventhubnamespace"
-event_hub_name       = "youreventhubname"
+storage_account_name = "streamanalyticsdata"
+unique_suffix        = "sa_eastus"
+event_ns_name        = "myeventns"
+event_hub_name       = "myeventhub"
 location             = "East US" # Customize as needed
 container_name       = "data"
