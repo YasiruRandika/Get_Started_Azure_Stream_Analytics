@@ -5,7 +5,7 @@ provider "azurerm" {
 
 # Create a resource group to contain all resources
 resource "azurerm_resource_group" "rg" {
-  name     = "example-resources" # Name of the resource group
+  name     = "stream_analytics_resources" # Name of the resource group
   location = var.location        # Location where the resource group will be created
 }
 
