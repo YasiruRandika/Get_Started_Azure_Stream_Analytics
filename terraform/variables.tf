@@ -1,50 +1,31 @@
-variable "resource_group_name" {
+variable "storage_account_name" {
   type        = string
-  description = "The name of the resource group."
+  description = "Azure storage account name."
+}
+
+variable "unique_suffix" {
+  type        = string
+  description = "Suffix added to all resource name to make them unique."
+}
+
+variable "event_ns_name" {
+  type        = string
+  description = "EventHubs namespace name."
+}
+
+variable "event_hub_name" {
+  type        = string
+  description = "EventHub name."
 }
 
 variable "location" {
   type        = string
   description = "The location of the resources."
+  default     = "East US" # Set your default location or customize as needed
 }
 
-variable "stream_analytics_job_name" {
-  type        = string
-  description = "The name of the Stream Analytics job."
-}
-
-variable "eventhub_namespace" {
-  type        = string
-  description = "The namespace of the Event Hub."
-}
-
-variable "eventhub_name" {
-  type        = string
-  description = "The name of the Event Hub."
-}
-
-variable "eventhub_key" {
-  type        = string
-  description = "The shared access policy key for the Event Hub."
-  sensitive   = true
-}
-
-variable "storage_account_name" {
-  type        = string
-  description = "The name of the storage account."
-}
-
-variable "storage_container" {
+variable "container_name" {
   type        = string
   description = "The name of the storage container."
-}
-
-variable "storage_path_prefix" {
-  type        = string
-  description = "The path prefix for the blob storage."
-}
-
-variable "query" {
-  type        = string
-  description = "The query for the Stream Analytics job."
+  default     = "data"
 }
