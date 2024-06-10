@@ -66,7 +66,7 @@ resource "azurerm_eventhub" "eventhub" {
 
 # Create a default consumer group for the Event Hub
 resource "azurerm_eventhub_consumer_group" "consumer_group" {
-  name                = "$Default"                             # Name of the consumer group
+  name                = var.consumer_group_name                        # Name of the consumer group
   namespace_name      = azurerm_eventhub_namespace.namespace.name # Namespace in which the consumer group will be created
   eventhub_name       = azurerm_eventhub.eventhub.name         # Event Hub to which the consumer group will belong
   resource_group_name = azurerm_resource_group.rg.name         # Resource group in which the namespace is located

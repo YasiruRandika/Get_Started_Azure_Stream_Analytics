@@ -29,3 +29,9 @@ variable "container_name" {
   description = "The name of the storage container."
   default     = "data"
 }
+
+variable "consumer_group_name" {
+  type = string
+  description = "The name of the consumer group"
+  default = "Default_CG"
+}
